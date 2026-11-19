@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about me?</title>
+  <!-- Library ikon dari Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 560px;
+      text-align: center;
+    }
+
+    /* Bagian Banner */
+    .banner {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+      background-image: url('https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1000&auto=format&fit=crop'); /* Ganti dengan link/file banner kamu */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      background-color: #1a1a1a;
+    }
+
+    /* Foto Profil Bulat */
+    .avatar-wrapper {
+      margin-top: -55px;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #050505;
+      background-color: #111;
+    }
+
+    /* Nama & Status */
+    .username {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #888888;
+      margin-top: 4px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #6b7280; /* Abu-abu untuk Offline, ganti #22c55e untuk Online */
+    }
+
+    /* Bio / Quote */
+    .bio {
+      font-size: 0.9rem;
+      color: #d4d4d4;
+      margin-top: 18px;
+      line-height: 1.5;
+    }
+
+    /* Deretan Ikon Sosial Media */
+    .socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .socials a {
+      color: #ffffff;
+      font-size: 1.35rem;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .socials a:hover {
+      transform: translateY(-3px);
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Foto Profil -->
+    <div class="avatar-wrapper">
+      <img 
+        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" 
+        alt="Profile Picture" 
+        class="avatar"
+      />
+    </div>
+
+    <!-- Nama & Status -->
+    <h1 class="username">ravenon</h1>
+    <div class="status">
+      <span class="status-dot"></span>
+      <span>Offline</span>
+    </div>
+
+    <!-- Bio -->
+    <p class="bio">I'm not sick, the world is.</p>
+
+    <!-- Link Sosial Media -->
+    <div class="socials">
+      <a href="https://discord.com" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://open.spotify.com" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </main>
+
+</body>
+</html>
